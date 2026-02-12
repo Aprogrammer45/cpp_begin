@@ -19,8 +19,15 @@ class funct{
     cout<<"String1 or String2(Enter No.)"<<endl;
     int c;
     cin>>c;
-    l=(c==1)?a.length():b.length();
-    cout<<l<<endl;
+    if (c==1){
+    		cout<<"Length of String1="<<a.length()<<endl;
+		}
+		else if (c==2){
+			cout<<"Length of String2="<<b.length()<<endl;
+		}
+		else{
+			cout<<"Invalid Input"<<endl;
+		}
     }
 };
 class process:public funct{
@@ -65,3 +72,4 @@ int main(){
     p.proc(f);}
     return 0;
 };
+
