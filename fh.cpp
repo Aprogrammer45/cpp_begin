@@ -57,7 +57,7 @@ int main(){
 	op.num();
 	op.choice();
 	string r=op.opt();
-	ofstream str("Computation.txt");
+	ofstream str("Computation.txt",ios::app);
 	str<<"Name="<<op.n<<endl;
 	str<<"Number="<<op.a<<endl;
 	str<<r<<endl;
@@ -66,3 +66,4 @@ int main(){
 	cout<<"Saved as Computation.txt"<<endl;
 	return 0;
 }
+
